@@ -1,0 +1,1 @@
+LINE="C:\Users\g7r\AppData\Local\LINE\bin\LineLauncher.exe"
