@@ -41,6 +41,11 @@ public class LineWin {
 }
 "@
 
+# レジストリとスタートアップフォルダーの両方から呼ばれても一重起動にする。
+$lineMutexCreated = $false
+$lineMutex = New-Object System.Threading.Mutex($true, "LineAutostartTrayApp", ([ref]$lineMutexCreated))
+if (-not $lineMutexCreated) { exit 0 }
+
 $lineExe = "$env:LOCALAPPDATA\LINE\bin\LineLauncher.exe"
 
 # --- 起動（未起動のときだけ） ---
