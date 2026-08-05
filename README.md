@@ -41,7 +41,3 @@ powershell.exe -NoProfile -WindowStyle Hidden -ExecutionPolicy Bypass -File "C:\
 - Windows 10 / 11
 - PowerShell 5.1 以降（Windows 標準搭載のもので動作）
 - LINE for Windows がインストール済みであること
-
-## ライセンス
-
-MIT License
